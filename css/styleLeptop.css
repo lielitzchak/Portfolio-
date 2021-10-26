@@ -27,6 +27,17 @@
     justify-content: space-evenly;
     align-items: center;
   }
+  ul li {
+    animation: show-in-first 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
+  @keyframes show-in-first {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
   #navbarMenu {
     position: fixed;
   }
@@ -39,11 +50,19 @@
   #homePageMain {
     display: flex;
     justify-content: space-between;
+    position: relative;
   }
+  /* #homePage {
+    display: flex;
+    justify-content: space-evenly;
+  } */
   #photoHomePage {
-    width: auto;
-    height: 350px;
-    border-radius: 160px;
+    margin-top: 8%;
+    margin-left: 61%;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
   }
 
   #sectionFooter {
@@ -56,5 +75,13 @@
   .imgFooterContact {
     height: 50px;
     width: auto;
+  }
+  #projectsArticle {
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+  section .imgCategory {
+    width: 15px;
+    height: auto;
   }
 }
