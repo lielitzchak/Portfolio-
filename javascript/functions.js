@@ -1,15 +1,15 @@
 class Project {
-  id;
   name;
   description;
   link;
   photo;
-  constructor(id, name, description, link, photo) {
-    this.id = id;
+  id;
+  constructor(name, description, link, photo) {
     this.name = name;
     this.description = description;
     this.link = link;
     this.photo = photo;
+    this.id = ++Project.id;
   }
-  static addId = 0
+  static id = 0;
 }
