@@ -1,12 +1,12 @@
-@media only screen and (min-width: 1039px) and (max-device-width: 2000px) {
+@media only screen and (min-width: 1014px) and (max-device-width: 2000px) {
   * {
     border: 0;
     margin: 0;
     box-sizing: border-box;
-    color: #ffff;
   }
   body {
-    background-color: #2f2f2f;
+    color: black;
+    background-color: #2f2f2f3d;
   }
   a {
     text-decoration: none;
@@ -30,6 +30,10 @@
   ul li {
     animation: show-in-first 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   }
+  #TitleHomePage {
+    margin-left: 1%;
+    font-size: 44px;
+  }
   @keyframes show-in-first {
     0% {
       transform: scale(0.5);
@@ -52,13 +56,10 @@
     justify-content: space-between;
     position: relative;
   }
-  /* #homePage {
-    display: flex;
-    justify-content: space-evenly;
-  } */
   #photoHomePage {
-    margin-top: 8%;
-    margin-left: 61%;
+    z-index: -1;
+    margin-top: 5%;
+    margin-left: 72%;
     position: absolute;
     width: 250px;
     height: 250px;
@@ -83,5 +84,24 @@
   section .imgCategory {
     width: 15px;
     height: auto;
+  }
+  #projectsArticle {
+    margin-left: 10%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-column-gap: 2%;
+  }
+  #projectsArticle article {
+    width: 100%;
+    position: relative;
+    z-index: -2;
+  }
+  #projectsArticle article img {
+    width: 75%;
+  }
+  #projectsArticle article p {
+    overflow-wrap: break-word;
+    width: 75%;
   }
 }
