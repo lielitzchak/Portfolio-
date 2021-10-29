@@ -3,7 +3,7 @@ let homePageMain = document.getElementById("homePageMain");
 let TitleHomePage = document.getElementById("TitleHomePage");
 let projectsArticle = document.getElementById("projectsArticle");
 // let projectsArticle = document.getElementById("projectsArticle");
-let skillsInDom = document.getElementById("skills");
+let projectSection = document.getElementById("projectsArticle");
 let i = 0;
 let id = setInterval(() => {
   TitleHomePage.innerHTML += `${homeTitle[i++]}`;
@@ -34,7 +34,7 @@ const MY_PROJECTS = [
 
 function printToDomAllProject() {
   for (const project of MY_PROJECTS) {
-    skillsInDom.innerHTML += `<article id="projectNumber${project.counter}>
+    projectSection.innerHTML += `<article id="projectNumber${project.counter}>
     <a href="${project.link}">
     <img src="${project.photo}" alt="">
     <h3>${project.name}</h3>
@@ -44,4 +44,5 @@ function printToDomAllProject() {
   }
 }
 
+console.log(MY_PROJECTS);
 printToDomAllProject();
