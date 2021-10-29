@@ -85,22 +85,22 @@
     width: 15px;
     height: auto;
   }
-  #skills {
+  #projectsArticle {
     margin-left: 10%;
     width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 30%);
     grid-column-gap: 2%;
   }
-  #skills article {
+  #projectsArticle article {
     width: 100%;
     position: relative;
     z-index: -2;
   }
-  #skills article img {
+  #projectsArticle article img {
     width: 75%;
   }
-  #skills article p {
+  #projectsArticle article p {
     overflow-wrap: break-word;
     width: 75%;
   }
