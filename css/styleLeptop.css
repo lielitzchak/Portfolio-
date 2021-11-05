@@ -33,6 +33,7 @@
   #TitleHomePage {
     margin-left: 1%;
     font-size: 44px;
+    z-index: -1;
   }
   @keyframes show-in-first {
     0% {
@@ -49,12 +50,19 @@
     display: none;
   }
   main {
-    margin-top: 57px;
+    margin-top: 4%;
+    margin-left: 1%;
   }
   #homePageMain {
     display: flex;
     justify-content: space-between;
     position: relative;
+  }
+  #aboutMe {
+    margin-top: 15%;
+    margin-bottom: 20%;
+    margin-left: 5%;
+    width: 64%;
   }
   #photoHomePage {
     z-index: -1;
