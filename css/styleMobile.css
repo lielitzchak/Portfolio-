@@ -3,6 +3,46 @@
     border: 0;
     margin: 0;
     box-sizing: border-box;
+  }
+  body {
     background-color: #2f2f2f;
+    width: 100%;
+    height: 100vh;
+  }
+  header {
+    width: 100%;
+    height: 100%;
+  }
+  @media screen and (max-height: 450px) {
+    .sidebar {
+      padding-top: 15px;
+    }
+    .sidebar a {
+      font-size: 18px;
+    }
+  }
+  #sectionForNavBarMenu {
+    position: fixed;
+    top: 0;
+    /* display: none; */
+  }
+  #sectionForNavBarMenu {
+    /* width: 90%;
+    height: 800px;
+    background-color: burlywood; */
+  }
+  #sectionForNavBarMenu nav ul li {
+    color: white;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  #navbarMenu {
+    background-color: yellow;
+  }
+  #TitleHomePage {
+    color: white;
   }
 }

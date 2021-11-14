@@ -1,4 +1,9 @@
-let homeTitle = "Hello, I'm Liel Itzchak and I'm a Full-stack Developer...";
+function openNav() {
+  document.getElementById("navbarMenu").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+const homeTitle = "Hello, I'm Liel Itzchak and I'm a Full-stack Developer...";
 let homePageMain = document.getElementById("homePageMain");
 let TitleHomePage = document.getElementById("TitleHomePage");
 let projectsArticle = document.getElementById("projectsArticle");
