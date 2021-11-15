@@ -14,6 +14,9 @@
   ul {
     background-color: #1d1c1ce5;
   }
+  #mySidebar {
+    display: none;
+  }
   nav ul,
   li {
     top: 0;
