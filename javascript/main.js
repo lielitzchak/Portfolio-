@@ -1,11 +1,17 @@
 function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  // document.getElementById("main").style.marginLeft = "250px";
+  let s = document.getElementsByClassName("sidebar");
+  for (let i = 0; i < s.length; i++) {
+    s[i].style.display = "block";
+  }
 }
 
 function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  // document.getElementById("main").style.marginLeft = "0";
+  let s = document.getElementsByClassName("sidebar");
+  for (let i = 0; i < s.length; i++) {
+    console.log(s[i]);
+    s[i].style.display = "block";
+  }
+  document.getElementById("closebtn").style.display = "none";
 }
 
 const homeTitle = "Hello, I'm Liel Itzchak and I'm a Full-stack Developer...";
