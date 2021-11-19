@@ -24,11 +24,13 @@
   }
 
   .sidebar {
-    font-size: 167px;
-    background-color: var(--background);
+    font-size: 17px;
+    font-size: 100px;
     padding: 10px 15px;
     border: none;
+    width: 450px;
   }
+
   .openbtn {
     position: sticky;
     font-size: 300px;
@@ -38,18 +40,25 @@
     border: none;
     background-color: yellow;
   }
-  .sidebar {
-    /* height: 100%;
-    width: 0;  */
-    /* position: fixed;*/ /* לשים את זה בסגירה  */
-    /* top: 0;
+  .sidebar ul li {
+    color: white;
+    background-color: greenyellow;
+  }
+  #navbarMenu {
+    background-color: violet;
+  }
+  /* .sidebar {
+    height: 100%;
+    width: 0; 
+    position: fixed; לשים את זה בסגירה  */
+  /* top: 0;
     left: 0;
     background-color: var(--background);
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
  */
-  }
+  /* } */
 
   /* .sidebar a {
     padding: 8px 8px 8px 32px;
