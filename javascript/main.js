@@ -2,6 +2,7 @@ function openNav() {
   let s = document.getElementsByClassName("sidebar");
   for (let i = 0; i < s.length; i++) {
     s[i].style.display = "block";
+    document.getElementById("navBtnOpen").style.display = "none";
   }
 }
 
@@ -9,9 +10,9 @@ function closeNav() {
   let s = document.getElementsByClassName("sidebar");
   for (let i = 0; i < s.length; i++) {
     console.log(s[i]);
-    s[i].style.display = "block";
+    s[i].style.display = "none";
+    document.getElementById("navBtnOpen").style.display = "block";
   }
-  document.getElementById("closebtn").style.display = "none";
 }
 
 const homeTitle = "Hello, I'm Liel Itzchak and I'm a Full-stack Developer...";
@@ -106,5 +107,4 @@ function printToDomAllProject() {
   }
 }
 
-console.log(MY_PROJECTS);
 printToDomAllProject();

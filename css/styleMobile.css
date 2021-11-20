@@ -36,16 +36,10 @@
     color: white;
     padding: 10px 15px;
     border: none;
-    background-color: rgb(0, 217, 255);
   }
 
   .sidebar ul li {
     color: white;
-    background-color: greenyellow;
-  }
-
-  #navbarMenu {
-    background-color: violet;
   }
 
   .sidebar {
@@ -55,8 +49,7 @@
     /* לשים את זה בסגירה   */
     top: 0;
     left: 0;
-    /* background-color: var(--background); */
-    background-color: yellow;
+
     overflow-x: hidden;
     display: none;
     padding-top: 60px;
