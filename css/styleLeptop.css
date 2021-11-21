@@ -14,6 +14,9 @@
   ul {
     background-color: #1d1c1ce5;
   }
+  #navBtnOpen , #closebtn{
+    display: none;
+  }
   #mySidebar {
     display: none;
   }
