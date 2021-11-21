@@ -9,7 +9,6 @@ function openNav() {
 function closeNav() {
   let s = document.getElementsByClassName("sidebar");
   for (let i = 0; i < s.length; i++) {
-    console.log(s[i]);
     s[i].style.display = "none";
     document.getElementById("navBtnOpen").style.display = "block";
   }
