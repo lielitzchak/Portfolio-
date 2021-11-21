@@ -11,23 +11,30 @@
 
   body {
     background-color: var(--background);
-    width: 100%;
-    height: 100vh;
+    /* width: 100%; */
+    /* height: 100vh; */
     color: white;
   }
 
   #sectionForNavBarMenu nav {
     position: fixed;
   }
-  a {
+
+  a,
+  ul li {
     text-decoration: none;
+    list-style: none;
+  }
+
+  #photoHomePage {
+    width: 40%;
   }
 
   .sidebar {
-    font-size: 107px;
-    padding: 10px 15px;
+    font-size: 45px;
+    padding: 10px 5px;
     border: none;
-    width: 315px;
+    /* width: 315px; */
   }
 
   .openbtn {
@@ -36,6 +43,9 @@
     color: white;
     padding: 10px 15px;
     border: none;
+    background-color: Transparent;
+    top: 0;
+    left: 0;
   }
 
   .sidebar ul li {
@@ -49,58 +59,16 @@
     /* לשים את זה בסגירה   */
     top: 0;
     left: 0;
-
     overflow-x: hidden;
     display: none;
     padding-top: 60px;
     transition: 0.5s;
   }
-
-  /* .sidebar a {
-    padding: 8px 8px 8px 32px;
-    font-size: 25px;
-    color: #ffffff;
-    display: block;
-    transition: 0.3s;
-  } */
-
-  /* .sidebar #closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  } */
-  /* #closebtn {
-    display: none;
-    font-size: 300px;
-    width: 100%;
-  } */
-
-  /* @media screen and (max-height: 450px) {
-    .sidebar {
-      padding-top: 15px;
-    }
-    .sidebar a {
-      font-size: 18px;
-    }
+  #projectSection {
+    width: 95%;
   }
 
-  #sectionForNavBarMenu {
-    position: fixed;
-    top: 0;
-    width: 50%;
-    height: 100%;
+  .imgProject {
+    width: 80%;
   }
-  #sectionForNavBarMenu nav ul li {
-    color: white;
-    list-style: none;
-  } */
-
-  /* #TitleHomePage {
-    color: white;
-  }
-  #photoHomePage {
-    border-radius: 50%;
-  } */
 }
