@@ -99,7 +99,7 @@ function printToDomAllProject() {
   for (const project of MY_PROJECTS) {
     projectSection.innerHTML += `<article id="projectNumber${project.counter}>
     <a href="${project.link}">
-    <img src="${project.photo}" alt="">
+    <img class="imgProject" src="${project.photo}" alt="">
     <h3>${project.name}</h3>
     <p>${project.description}</p>
     </a>
