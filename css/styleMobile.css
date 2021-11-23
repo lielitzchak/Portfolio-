@@ -1,8 +1,9 @@
-:root {
-  --background: #2f2f2f;
-}
-
 @media only screen and (min-device-width: 5px) and (max-device-width: 512px) {
+  :root {
+    --background: #f5e8c7;
+    --text: black;
+    --font: Convergence, sans-serif;
+  }
   * {
     border: 0;
     margin: 0;
@@ -11,9 +12,11 @@
 
   body {
     background-color: var(--background);
-    color: white;
+    color: var(--text);
   }
-
+  main {
+    padding: 2%;
+  }
   #sectionForNavBarMenu nav {
     position: fixed;
   }
@@ -22,10 +25,13 @@
   ul li {
     text-decoration: none;
     list-style: none;
+    color: var(--text);
+    padding-bottom: 45%;
   }
 
   #photoHomePage {
     width: 40%;
+    border-radius: 100%;
   }
 
   .openbtn {
@@ -40,6 +46,7 @@
 
   #TitleHomePage {
     padding-top: 60px;
+    width: 50%;
   }
   .sidebar ul li {
     color: white;
@@ -49,7 +56,7 @@
     font-size: 63px;
   }
   .sidebar {
-    font-size: 45px;
+    font-size: 31px;
     padding: 10px 5px;
     border: none;
     height: 100%;
@@ -61,12 +68,25 @@
     display: none;
     padding-top: 60px;
     transition: 0.5s;
+    font-family: var(--font);
   }
   nav .sidebar {
     width: 44%;
-    height: 100%;
+    height: 726px;
     background-color: yellow;
+    animation: scale-up-hor-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   }
+  @keyframes scale-up-hor-left {
+    0% {
+      transform: scaleX(0.4);
+      transform-origin: 0% 0%;
+    }
+    100% {
+      transform: scaleX(1);
+      transform-origin: 0% 0%;
+    }
+  }
+
   #projectSection {
     width: 95%;
   }
